@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+	<item
+		android:id="@+id/action_location"
+		android:icon="@drawable/ic_location_on_white_24dp"
+		android:orderInCategory="100"
+		android:title="Включить gps"
+		android:visible="true"/>
+
+	<item
+		android:id="@+id/action_kalman"
+		android:icon="@drawable/ic_add_location_white_24dp"
+		android:orderInCategory="101"
+		android:title="Включить Калмана"
+		android:visible="true"/>
+
+</menu>

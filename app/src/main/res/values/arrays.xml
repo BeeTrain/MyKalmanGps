@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<integer-array name="map_scale_intervals">
+		<item>1</item>
+		<item>2</item>
+		<item>4</item>
+		<item>7</item>
+		<item>12</item>
+		<item>28</item>
+		<item>58</item>
+		<item>131</item>
+		<item>297</item>
+		<item>525</item>
+		<item>890</item>
+		<item>1544</item>
+	</integer-array>
+</resources>
