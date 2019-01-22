@@ -389,12 +389,6 @@ public class KalmanTrackingService extends Service
 							mKalmanServiceSettings.getmPosFactor());
 				}
 
-				if (mKalmanFilter != null) {
-					double textXfiltr = mKalmanFilter.getCurrentX();
-					double textYfiltr = mKalmanFilter.getCurrentY();
-				}
-
-
 				SensorGpsDataItem sdi = new SensorGpsDataItem(
 						timeStamp, location.getLatitude(), location.getLongitude(), location.getAltitude(),
 						SensorGpsDataItem.NOT_INITIALIZED,
@@ -556,11 +550,6 @@ public class KalmanTrackingService extends Service
 						continue;
 					}
 					lastTimeStamp = sdi.getTimestamp();
-
-					if (mKalmanFilter != null) {
-						double textXfiltr = mKalmanFilter.getCurrentX();
-						double textYfiltr = mKalmanFilter.getCurrentY();
-					}
 
 					if (sdi.getGpsLat() == SensorGpsDataItem.NOT_INITIALIZED) {
 						handlePredict(sdi);

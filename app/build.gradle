@@ -32,6 +32,7 @@ dependencies {
 
 	// OSM map library
 	implementation 'org.osmdroid:osmdroid-android:5.5:release@aar'
+
 	// KalmanFilter
 	implementation('com.github.maddevsio:mad-location-manager:0.1.13') {
 		exclude group: 'com.android.support'
